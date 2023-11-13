@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Login</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>Login</h1>
+    <form action="/dashboard" method="get">
+      <input type="text" name="username" placeholder="Username" >
+      <input type="password" name="password" placeholder="Password">
+      <button type="submit">Login</button>
+    </form>
   </body>
 </html>
